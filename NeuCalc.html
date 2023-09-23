@@ -8,24 +8,26 @@
 </head>
 <body>
     <div class="container">
-        <form name="calculator">
+        <form name="calculator" class="calculator">
             <input type="text" name="text" readonly placeholder="0">
-            <input type="button" class="num-btn" value="c" onclick="calculator.text.value=''">
-            <input type="button" class="num-btn" value="×" onclick="calculator.text.value+='*'">
-            <input type="button" class="num-btn" value="÷" onclick="calculator.text.value+='/'">
-            <input type="button" class="num-btn" value="1" onclick="calculator.text.value+='1'">
-            <input type="button" class="num-btn" value="2" onclick="calculator.text.value+='2'">
-            <input type="button" class="num-btn" value="3" onclick="calculator.text.value+='3'">
-            <input type="button" class="num-btn" value="–" onclick="calculator.text.value+='-'">
-            <input type="button" class="num-btn" value="5" onclick="calculator.text.value+='5'">
-            <input type="button" class="num-btn" value="6" onclick="calculator.text.value+='6'">
-            <input type="button" class="num-btn" value="7" onclick="calculator.text.value+='7'">
-            <input type="button" class="num-btn" value="+" onclick="calculator.text.value+='+'">
-            <input type="button" class="num-btn" value="8" onclick="calculator.text.value+='8'">
-            <input type="button" class="num-btn" value="9" onclick="calculator.text.value+='9'">
-            <input type="button" class="num-btn" value="•" onclick="calculator.text.value+='.'">
-            <input type="button" class="num-btn" value="0" onclick="calculator.text.value+='0'">
-            <input type="button" class="num-btn" value="=" onclick="calculator.text.value=eval(calculator.text.value)">
+            <input type="button" class="symb btn" value="c" onclick="calculator.text.value=''">
+            <input type="button" class="symb btn" value="←" onclick="calculator.text.value=calculator.text.value.toString().slice(0,-1)">
+            <input type="button" class="symb btn" value="÷" onclick="calculator.text.value+='/'">
+            <input type="button" class="numb btn" value="7" onclick="calculator.text.value+='7'">
+            <input type="button" class="numb btn" value="8" onclick="calculator.text.value+='8'">
+            <input type="button" class="numb btn" value="9" onclick="calculator.text.value+='9'">
+            <input type="button" class="symb btn" value="×" onclick="calculator.text.value+='*'">
+            <input type="button" class="numb btn" value="4" onclick="calculator.text.value+='4'">
+            <input type="button" class="numb btn" value="5" onclick="calculator.text.value+='5'">
+            <input type="button" class="numb btn" value="6" onclick="calculator.text.value+='6'">
+            <input type="button" class="symb btn" value="+" onclick="calculator.text.value+='+'">
+            <input type="button" class="symb btn" value="–" onclick="calculator.text.value+='-'">
+            <input type="button" class="numb btn" value="1" onclick="calculator.text.value+='1'">
+            <input type="button" class="numb btn" value="2" onclick="calculator.text.value+='2'">
+            <input type="button" class="numb btn" value="3" onclick="calculator.text.value+='3'">
+            <input type="button" class="symb btn" value="•" onclick="calculator.text.value+='.'">
+            <input type="button" class="numb btn" value="0" onclick="calculator.text.value+='0'">
+            <input type="button" class="symb btn" value="=" onclick="calculator.text.value=eval(calculator.text.value)">
         </form>
     </div>
 </body>
